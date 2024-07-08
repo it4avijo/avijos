@@ -1,0 +1,20 @@
+.footer_row {
+  line-height: 35px;
+}
+.copyRight_heading {
+  background-color: #fff;
+  border-top: 1px solid #0097db;
+  color: #f7f7f7;
+}
+
+.copyRight_heading h2 {
+  color: #0097db !important;
+}
+.copyRight_heading button {
+  width: Hug (162px) px;
+  height: Fixed (37px) px;
+  padding: 5px 25px 5px 25px;
+  gap: 10px;
+  border-radius: 3px;
+  background-color: #0097db;
+}

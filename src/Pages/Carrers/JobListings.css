@@ -1,0 +1,217 @@
+/* JobListings.css */
+
+/* Font */
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url("../../Assets/fonts/Gilroy-SemiBold.ttf") format("truetype");
+}
+
+/* Basic layout and spacing */
+.container-fluid {
+  padding: 20px;
+}
+
+.bg-light {
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+h5 {
+  margin-bottom: 20px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card-body ul {
+  padding-left: 20px;
+}
+
+.card-body li {
+  list-style-type: disc;
+}
+
+.accordion .card {
+  border: none;
+}
+
+.accordion .card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.accordion .card-header:hover {
+  background-color: #e9ecef;
+}
+
+.accordion .card-body {
+  border-top: 1px solid #ddd;
+}
+
+/* Button styling */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.fixed-sidebar {
+  position: fixed;
+  top: 60px; /* Adjust this value if you have a fixed top bar at the top */
+  bottom: 0;
+  width: 25%;
+  overflow-y: auto;
+  background-color: #f8f9fa; /* Bootstrap's light background color */
+  padding-top: 20px;
+  z-index: 1001; /* Set a higher z-index to ensure it's on top */
+}
+
+.content {
+  margin-left: 25%; /* Same width as the sidebar */
+  padding: 20px;
+  z-index: 1000; /* Set a lower z-index than the sidebar */
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  z-index: 1002; /* Ensure it's on top of both sidebar and content */
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2%; /* Same width as the sidebar to align properly */
+}
+
+.top-bar h5 {
+  font-family: Gilroy-SemiBold;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 39.2px;
+}
+
+.top-bar .dropdown button {
+  border: 1px solid #cccccc !important;
+  font-family: Gilroy-SemiBold;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.26px;
+  color: #6f6f6f !important;
+  text-align: center;
+}
+
+.top-bar .dropdown-toggle {
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+.content .h5 {
+  font-family: Gilroy-SemiBold;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.4px;
+}
+.content .h6 {
+  font-family: Gilroy-SemiBold;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.41px;
+}
+.posted p {
+  font-family: Gilroy-SemiBold;
+  font-size: 17px;
+  line-height: 21.83px;
+}
+.posted strong {
+  font-family: Gilroy-SemiBold;
+  font-size: 18px;
+  font-weight: bolder !important;
+}
+.content .card-text strong {
+  font-family: Gilroy-SemiBold;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.05px;
+}
+.content ul {
+  font-family: Gilroy-SemiBold;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.83px;
+}
+.collapse {
+  visibility: visible !important;
+}
+body {
+  background-color: #f8f9fa; /* light grey background */
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #6c757d; /* muted text color */
+}
+
+.footer ul {
+  padding-left: 0;
+}
+
+.footer ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.footer ul li a {
+  color: #6c757d;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .bg-light {
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+
+  .card-body ul {
+    padding-left: 15px;
+  }
+
+  .card-body li {
+    list-style-type: circle;
+  }
+
+  /* Adjustments for smaller screens */
+  .fixed-sidebar {
+    width: 100%; /* Full width for smaller screens */
+    top: 0;
+    bottom: auto; /* Remove bottom positioning for smaller screens */
+    padding-top: 80px; /* Adjust top padding to accommodate top bar */
+    overflow-y: auto; /* Ensure content can be scrolled if needed */
+    z-index: 1003; /* Ensure it's on top */
+  }
+
+  .content {
+    margin-left: 0; /* No margin for smaller screens */
+    z-index: 1002; /* Set a lower z-index than the sidebar */
+  }
+}
