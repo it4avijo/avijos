@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url("../Assets/fonts/Gilroy-SemiBold.ttf") format("truetype");
+}
+.faq-container {
+  width: 100%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: bold;
+  align-items: center;
+}
+
+.faq-icon {
+  display: flex;
+  align-items: center;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.faq-answer p {
+  margin: 0;
+  padding: 10px 0; /* Add some padding for better readability */
+  font-family: Gilroy-SemiBold;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.41px;
+  text-align: left;
+}
+
+.faq-answer.open {
+  transition: max-height 0.3s ease-out;
+}
+.faq-container span {
+  font-family: Gilroy-SemiBold;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.26px;
+  text-align: left;
+}

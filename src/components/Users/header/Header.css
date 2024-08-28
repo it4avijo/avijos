@@ -1,0 +1,57 @@
+/* Define the font using @font-face */
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url("../../../Assets/fonts/Gilroy-SemiBold.ttf") format("truetype");
+}
+
+/* Navbar styles */
+.navbar {
+  height: 10vh !important; /* Set navbar height to 8% of viewport height */
+  background: #0097db;
+}
+
+/* Logo navbar styles */
+.logo_navbar {
+  font-family: Gilroy-SemiBold;
+  font-size: 5vh !important; /* Set font size relative to viewport height */
+  font-weight: 400;
+  line-height: 1; /* Set line-height to 1 to center text vertically */
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: white !important;
+}
+
+/* Search bar styles */
+.search_bar {
+  padding: 1vh 2.5vh !important; /* Set padding relative to viewport height */
+  font-family: Gilroy-SemiBold;
+  color: #898c90;
+  width: 50% !important;
+}
+
+/* Navbar list items styles */
+.navbar_t {
+  font-family: Gilroy-SemiBold;
+  color: white !important;
+  margin-left: 1.2vh; /* Adjust spacing between list items */
+}
+@media only screen and (max-width: 768px) {
+  /* Increase the font size for larger screens */
+  .logo_navbar {
+    font-size: 10vh !important;
+  }
+  .navbar {
+    height: 100% !important;
+  }
+  /* Adjust padding for larger screens */
+  .search_bar {
+    padding: 2vh 2vh !important;
+    width: 100% !important;
+    margin-top: 1rem;
+}
+
+  /* Adjust margin between list items for larger screens */
+  .navbar_t {
+    margin-left: 2vh;
+  }
+}
