@@ -11,7 +11,7 @@ const ReveiwSubmit = () => {
       <Hero />
       <div className="container mt-5">
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-md-4" >
             <ContactInformation />
           </div>
           <div className="col-md-8 mb-3">
