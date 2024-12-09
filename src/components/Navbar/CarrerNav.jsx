@@ -35,7 +35,7 @@ const CareerNav = () => {
               </svg>
             </Button>
             <Link to="/" className="text-decoration-none">
-              <h3 className="text-black">avijo</h3>
+              <h3 className="text-black">avijobs</h3>
             </Link>
             <Link to="/carrer/JobListings" className="text-black text-decoration-none">
               Careers
