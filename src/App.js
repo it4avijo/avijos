@@ -36,6 +36,8 @@ import Diversity from "./Pages/Carrers/Diversity";
 import LeaderShip from "./Pages/Carrers/LeaderShip";
 import JobCategory from "./Pages/Carrers/JobCategory";
 import JobTeam from "./Pages/Carrers/JobTeam";
+import Blogs from "./Pages/Blogs";
+import Blog from "./Pages/Blog";
 
 const App = () => {
   const location = useLocation();
@@ -65,6 +67,8 @@ const App = () => {
         <Route path="/LeaderShip" element={<LeaderShip />} />
         <Route path="/JobCategory" element={<JobCategory />} />
         <Route path="/JobTeam" element={<JobTeam />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blog/:id" element={<Blog />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

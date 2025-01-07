@@ -49,6 +49,15 @@ function Footer() {
                 </li>
                 <li>
                   <Link
+                    to="/blogs"
+                    onClick={scrollToTop}
+                    class="text-gray-600 hover:text-gray-800 text-decoration-none"
+                  >
+                    Blogs
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     to="/carrer"
                     onClick={scrollToTop}
                     class="text-lg text-gray-600 hover:text-gray-800 text-decoration-none"
